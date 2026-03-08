@@ -7,7 +7,7 @@ const projects = [
     title: "CA Website", 
     tech: "HTML, CSS, JavaScript",
     desc: "A simple, efficient service for Chartered Accountants.",
-    liveUrl: "https://ca-website-demo.vercel.app", // Replace with your actual URL
+    liveUrl: "https://ca-static-site.vercel.app/", // Replace with your actual URL
     githubUrl: "https://github.com/yadavyogesh13/ca-website" // Replace with your actual repo
   },
   { 
@@ -15,32 +15,24 @@ const projects = [
     title: "CPS Checker", 
     tech: "TypeScript, HTML, CSS, JavaScript",
     desc: "A tool to check clicks per second with a clean UI.",
-    liveUrl: "https://cps-checker-demo.vercel.app", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/cps-checker" // Replace with your actual repo
+    liveUrl: "https://cpschecker.site/", // Replace with your actual URL
+    githubUrl: "https://github.com/yadavyogesh13/cpstester" // Replace with your actual repo
   },
   { 
     id: 3, 
-    title: "Clinic Management System", 
-    tech: "React, Node.js, MongoDB",
-    desc: "Complete management solution for clinics (Appointments, Patients, Records).",
-    liveUrl: "https://clinic-management-demo.vercel.app", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/clinic-management" // Replace with your actual repo
-  },
-  { 
-    id: 4, 
     title: "Real Estate Agent Website", 
     tech: "React, Laravel, MySQL",
     desc: "Property listing website with a full admin panel for management.",
-    liveUrl: "https://real-estate-demo.vercel.app", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/real-estate" // Replace with your actual repo
+    liveUrl: "", // Replace with your actual URL
+    githubUrl: "https://github.com/yadavyogesh13/real-estate-agent" // Replace with your actual repo
   },
   { 
-    id: 5, 
-    title: "URL Shortener", 
-    tech: "Laravel, JavaScript, MySQL",
-    desc: "A simple, efficient service to shorten long URLs.",
-    liveUrl: "https://url-shortener-demo.vercel.app", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/url-shortener" // Replace with your actual repo
+    id: 4, 
+    title: "Clinic Management System", 
+    tech: "React, Node.js, MongoDB",
+    desc: "Complete management solution for clinics (Appointments, Patients, Records).",
+    liveUrl: "", // Replace with your actual URL
+    githubUrl: "https://github.com/yadavyogesh13/Hospital-Management-System" // Replace with your actual repo
   },
 ];
 
