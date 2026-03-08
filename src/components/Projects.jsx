@@ -7,32 +7,32 @@ const projects = [
     title: "CA Website", 
     tech: "HTML, CSS, JavaScript",
     desc: "A simple, efficient service for Chartered Accountants.",
-    liveUrl: "https://ca-static-site.vercel.app/", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/ca-website" // Replace with your actual repo
+    liveUrl: "https://ca-static-site.vercel.app/",
+    githubUrl: "https://github.com/yadavyogesh13/ca-website"
   },
   { 
     id: 2, 
     title: "CPS Checker", 
     tech: "TypeScript, HTML, CSS, JavaScript",
     desc: "A tool to check clicks per second with a clean UI.",
-    liveUrl: "https://cpschecker.site/", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/cpstester" // Replace with your actual repo
+    liveUrl: "https://cpschecker.site/",
+    githubUrl: "https://github.com/yadavyogesh13/cpstester"
   },
   { 
     id: 3, 
     title: "Real Estate Agent Website", 
     tech: "React, Laravel, MySQL",
     desc: "Property listing website with a full admin panel for management.",
-    liveUrl: "", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/real-estate-agent" // Replace with your actual repo
+    liveUrl: "",
+    githubUrl: "https://github.com/yadavyogesh13/real-estate-agent"
   },
   { 
     id: 4, 
     title: "Clinic Management System", 
     tech: "React, Node.js, MongoDB",
     desc: "Complete management solution for clinics (Appointments, Patients, Records).",
-    liveUrl: "", // Replace with your actual URL
-    githubUrl: "https://github.com/yadavyogesh13/Hospital-Management-System" // Replace with your actual repo
+    liveUrl: "",
+    githubUrl: "https://github.com/yadavyogesh13/Hospital-Management-System"
   },
 ];
 
@@ -68,17 +68,20 @@ const Projects = () => {
             <p className="text-gray-300 mb-6 flex-grow">{project.desc}</p>
             
             <div className="flex justify-center gap-4 mt-auto">
-              <a 
-                href={project.liveUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm font-medium"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-                Live Demo
-              </a>
+              {/* Only show Live Demo button if liveUrl exists and is not empty */}
+              {project.liveUrl && project.liveUrl.trim() !== '' && (
+                <a 
+                  href={project.liveUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300 text-sm font-medium"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  Live Demo
+                </a>
+              )}
               
               <a 
                 href={project.githubUrl} 

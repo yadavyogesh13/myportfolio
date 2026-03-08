@@ -4,11 +4,11 @@ import { FaLinkedin, FaGithub, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 const socialLinks = {
   linkedin: {
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/ yogesh-yadav-8485691bb",
     icon: <FaLinkedin size={28} color="#0A66C2" />,
   },
   github: {
-    url: "https://github.com",
+    url: "https://github.com/yadavyogesh13",
     icon: <FaGithub size={28} color="#FFFFFF" />,
   },
   // twitter: {
