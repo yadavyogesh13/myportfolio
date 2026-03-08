@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 const socialLinks = {
   linkedin: {
-    url: "https://www.linkedin.com/in/ yogesh-yadav-8485691bb",
+    url: "https://www.linkedin.com/in/yogesh-yadav-8485691bb",
     icon: <FaLinkedin size={28} color="#0A66C2" />,
   },
   github: {
