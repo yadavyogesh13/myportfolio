@@ -31,7 +31,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className="text-5xl md:text-7xl font-bold mb-4"
       >
-        Hi, I’m <span className="text-blue-400">Yogesh R Yadav</span>
+        Hi, I’m <span className="text-blue-400">Yogesh Yadav</span>
       </motion.h1>
 
       <motion.p
@@ -40,7 +40,7 @@ const Hero = () => {
         transition={{ delay: 0.5, duration: 1 }}
         className="text-xl md:text-2xl mb-6 text-gray-300"
       >
-        Full Stack Developer | Freelancer
+        Enthusiastic Full Stack Developer & Problem Solver
       </motion.p>
 
       <div className="flex items-center space-x-4 mb-6">

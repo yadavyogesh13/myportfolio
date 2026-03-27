@@ -4,19 +4,19 @@ import { CalendarIcon } from '@heroicons/react/24/outline';
 
 const experiences = [
   {
-    role: "Full Stack Web Developer",
-    company: "A One Salasar",
-    period: "Feb. 2023 - Present",
+    role: "Full Stack Web Developer (Consultant)",
+    company: "Meraki TalentWorks - Client (GOQII)",
+    period: "Oct. 2025 - Present",
     description:
-      "Currently building responsive web applications, including an online auction platform, Billing Portal, Wallet For Bidders and CRM, using Laravel & CodeIgniter, MySQL, and Blade Template Engine at A One Salasar.",
+      "Designed and developed secure, high-performance RESTful APIs for web and mobile healthcare applications, ensuring reliable data exchange and scalability.Integrated multiple healthcare third-party APIs And Implemented webhooks for WhatsApp messaging, enabling real-time notifications and automated communication workflows.Developed a Role-Based CMS with integrated AI-powered blog generation, accelerating content creation by 60% and reducing manual input and Implemented SSO Login.Optimized backend logic and database queries, resulting in faster API response times and improved system efficiency.",
     isLatest: true,
   },
   {
-    role: "Junior Web Developer Intern",
+    role: "Full Stack Web Developer",
     company: "A One Salasar",
-    period: "Nov. 2022 - Feb. 2023",
+    period: "Feb. 2023 - Oct. 2025",
     description:
-      "Interned as a Junior Web Developer at A One Salasar, developing and maintaining front-end components for web applications using Html, CSS and JS while mastering modern web development practices.",
+      "Developed and managed auction-based web applications, handling backend logic, bidding workflows, user management. Prepared client-specific reports and implemented custom auction functionality changes based on individual client requirements, ensuring flexible and scalable auction workflows. Build RESTFul API and Implemented and managed CRON jobs on production servers for automated workflows including auction status updates, report execution, and background processes.",
     isLatest: false,
   },
 ];
@@ -24,7 +24,7 @@ const experiences = [
 const Experience = () => {
   return (
     <div id='experience' className="max-w-4xl mx-auto px-6 py-20 text-blue-400">
-      
+
       <motion.h2
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}

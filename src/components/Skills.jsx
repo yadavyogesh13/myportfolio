@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaDocker, FaLinux, FaWindows, FaPhp } from 'react-icons/fa';
-import { SiTailwindcss, SiExpress, SiMongodb, SiPostman, SiGithub, SiVercel, SiNpm, SiLaravel, SiCodeigniter, SiMysql, SiJquery, SiBitbucket, SiSourcetree } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiMongodb, SiPostman, SiGithub, SiVercel, SiNpm, SiLaravel, SiCodeigniter, SiMysql, SiJquery, SiBitbucket, SiSourcetree, SiPostgresql } from 'react-icons/si';
 
 // Define categories
 const skillCategories = [
@@ -13,6 +13,7 @@ const skillCategories = [
       { name: "CSS", icon: <FaCss3Alt size={24} color="#1572B6" /> },
       { name: "JavaScript", icon: <FaJs size={24} color="#F7DF1E" /> },
       { name: "jQuery", icon: <SiJquery size={24} color="#0769AD" /> },
+      { name: "AJAX", icon: <FaJs size={24} color="#F7DF1E" /> }, // Reusing JS icon for AJAX
       { name: "Tailwind CSS", icon: <SiTailwindcss size={24} color="#38B2AC" /> },
       { name: "ReactJS", icon: <FaReact size={24} color="#61DAFB" /> },
     ],
@@ -26,8 +27,10 @@ const skillCategories = [
       { name: "PHP", icon: <FaPhp size={24} color="#777BB4" /> },
       { name: "Laravel", icon: <SiLaravel size={24} color="#FF2D20" /> },
       { name: "CodeIgniter", icon: <SiCodeigniter size={24} color="#EF4223" /> },
+      { name: "EJS", icon: <FaNodeJs size={24} color="#339933" /> }, // Reusing Node icon for EJS
       { name: "MySQL", icon: <SiMysql size={24} color="#4479A1" /> },
-      { name: "MongoDB", icon: <SiMongodb size={24} color="#47A248" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql size={24} color="#336791" /> },
+      { name: "PLSQL", icon: <SiMysql size={24} color="#4479A1" /> }, // Reusing MySQL icon for PLSQL
     ],
   },
   {
@@ -35,21 +38,11 @@ const skillCategories = [
     key: "tools",
     tools: [
       { name: "Git", icon: <FaGit size={24} color="#F05032" /> },
-      { name: "GitHub", icon: <SiGithub size={24} color="#181717" /> },
-      { name: "Vercel", icon: <SiVercel size={24} color="#000000" /> },
-      { name: "Postman", icon: <SiPostman size={24} color="#FF6C37" /> },
-      { name: "npm", icon: <SiNpm size={24} color="#CB3837" /> },
-      { name: "Docker", icon: <FaDocker size={24} color="#2496ED" /> },
       { name: "Bitbucket", icon: <SiBitbucket size={24} color="#205081" /> },
       { name: "SourceTree", icon: <SiSourcetree size={24} color="#0052CC" /> },
-    ],
-  },
-  {
-    title: "Operating Systems",
-    key: "os",
-    tools: [
-      { name: "Linux", icon: <FaLinux size={24} color="#FCC624" /> },
-      { name: "Windows", icon: <FaWindows size={24} color="#0078D6" /> },
+      { name: "Postman", icon: <SiPostman size={24} color="#FF6C37" /> },
+      { name: "GitHub", icon: <SiGithub size={24} color="#181717" /> },
+      { name: "npm", icon: <SiNpm size={24} color="#CB3837" /> },
     ],
   },
 ];
